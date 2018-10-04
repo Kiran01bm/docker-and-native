@@ -1,0 +1,44 @@
+version: '3'
+
+services:
+  nginx:
+    image: nginx:1.12.2
+    container_name: con_nginx
+    ports:
+      - 24002:24002
+      - 44002:44002
+    volumes:
+       - /etc/nginx/nginx.conf.docker:/etc/nginx/nginx.conf
+       - "/etc/nginx/cert.pem:/etc/pki/nginx/server.crt"
+       - "/etc/nginx/key-decrypted.pem:/etc/pki/nginx/private/server.key"
+
+  nginx_priv:
+    image: nginx:1.12.2
+    container_name: con_nginx_priv
+    privileged: true
+    ipc: host
+    pid: host
+    network_mode: host
+    volumes:
+       - /etc/nginx/nginx.conf.dockerpriv:/etc/nginx/nginx.conf
+       - "/etc/nginx/cert.pem:/etc/pki/nginx/server.crt"
+       - "/etc/nginx/key-decrypted.pem:/etc/pki/nginx/private/server.key"
+
+  postgres:
+    image: postgres:9.2.23
+    container_name: con_postgresql
+    volumes:
+      - /var/lib/pgsqldocker:/var/lib/postgresql
+    ports:
+      - "6432:5432"
+
+  # TODO: volume mount postgresql conf
+  postgres_priv:
+    image: postgres:9.2.23
+    container_name: con_postgresql_priv
+    privileged: true
+    ipc: host
+    pid: host
+    network_mode: host
+    volumes:
+      - /var/lib/pgsqldockerpriv:/var/lib/postgresql
