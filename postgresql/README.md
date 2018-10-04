@@ -8,7 +8,6 @@ docker-compose -f ../docker-compose.yml up -d
 
 ## Test
 
-
 ### On Host
 
 Refer main [Main README.md](../README.md) for explanation
@@ -79,5 +78,4 @@ pgbench -h localhost -p 5432 -c 10 -j 2 -t 10000 dockertest
 
 ### Memory Utilisation for postgresql on docker priv
 ![Alt text](pgbench_memory_dockerpriv.png?raw=true "Memory utilisation for postgresql on docker priv")
-
 

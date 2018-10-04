@@ -15,7 +15,8 @@ Default is 10,000 Requests fired at 25 concurrency level and max wait of 1 sec p
 
 ## Screen Prints
 
-### The version of nginx on Host (same version images are used for docker so refer the screen print in [Main README.md](../README.md))
+### Version of nginx on Host
+Note: Same version images are used for docker. Screen print in [Main README.md](../README.md))
 ![Alt text](nginx-version-local.png?raw=true "nginx version on host")
 
 ### CPU utilisation for Nginx on Host
@@ -32,3 +33,21 @@ Default is 10,000 Requests fired at 25 concurrency level and max wait of 1 sec p
 
 ### Network utilisation for Nginx on Docker
 ![Alt text](nginxDockerNetwork.png?raw=true "Network utilisation for nginx on docker")
+
+### Nginx on Host - http
+![Alt text](nginxHostHttp.png?raw=true "Nginx on Host - http")
+
+### Nginx on Host - https
+![Alt text](nginxHostHttps.png?raw=true "Nginx on Host - https")
+
+### Nginx on Docker - http
+![Alt text](nginxDockerHttp.png?raw=true "Nginx on Docker - http")
+
+### Nginx on Docker - https
+![Alt text](nginxDockerHttps.png?raw=true "Nginx on Docker - https")
+
+### Nginx on Docker with Host namespaces - http
+![Alt text](nginxDockerPrivHttp.png?raw=true "Nginx on Docker with Host namespces - http")
+
+### Nginx on Docker with Host namespaces - https
+![Alt text](nginxDockerPrivHttps.png?raw=true "Nginx on Docker with Host namespaces - https")
