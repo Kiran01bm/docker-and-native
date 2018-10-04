@@ -66,18 +66,18 @@ pgbench -h localhost -p 5432 -c 10 -j 2 -t 10000 dockertest
 ![Alt text](pgbench_dockerpriv.png?raw=true "postgresql on docker privileges")
 
 ### CPU Utilisation for postgresql on host
-![Alt text](pgbench_cpu_host.png?raw=true "CPU utilisation for postgresql on host)
+![Alt text](pgbench_cpu_host.png?raw=true "CPU utilisation for postgresql on host")
 
-### CPU Utilisation for postgresql on docker (both docker and docker priv)
-![Alt text](pgbench_cpu_dockerANDdockerpriv.png?raw=true "CPU utilisation for postgresql on host)
+### CPU Utilisation for postgresql on docker (both docker and docker priv")
+![Alt text](pgbench_cpu_dockerANDdockerpriv.png?raw=true "CPU utilisation for postgresql on host")
 
 ### Memory Utilisation for postgresql on host
-![Alt text](pgbench_memory_host.png?raw=true "Memory utilisation for postgresql on host)
+![Alt text](pgbench_memory_host.png?raw=true "Memory utilisation for postgresql on host")
 
 ### Memory Utilisation for postgresql on docker
-![Alt text](pgbench_memory_docker.png?raw=true "Memory utilisation for postgresql on docker)
+![Alt text](pgbench_memory_docker.png?raw=true "Memory utilisation for postgresql on docker")
 
 ### Memory Utilisation for postgresql on docker priv
-![Alt text](pgbench_memory_dockerpriv.png?raw=true "Memory utilisation for postgresql on docker priv)
+![Alt text](pgbench_memory_dockerpriv.png?raw=true "Memory utilisation for postgresql on docker priv")
 
 
